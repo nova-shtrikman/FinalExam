@@ -1,2 +1,2 @@
 # FinalExam
-Final exam for DTC 477
+This is my first commit for my final exam
