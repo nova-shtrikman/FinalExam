@@ -26,62 +26,77 @@
 
 
 <!--nav bar set-up on home page-->
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <div class="navbar">
-        <a href="#home">Home</a>
+
+<!--this is for the slideshow-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!--for nav bar-->
+<div class="navbar">
+  <a href="#home">Home</a>
+ 
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#">Flourless Chocolate Cake</a>
+    <a href="#">Gluten Free Chocolate Chip Cookies</a>
+    <a href="#">Magic Bars</a>
+  </div>
+  </div> 
+</div>
+
+<h3>Welcome to exploring some new gluten free recipes!</h3>
+<p>My name is Nova, and I have been gluten free for 20 years, living with Celiac Disease.
+Curious about exploring some of my favorite bakes? Baking gluten free doesn't have to be boring!
+</p>
+
+
+
+
+<!-- for slide show -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://images.unsplash.com/photo-1540337706094-da10342c93d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" style="width:100%">
+      <div class="text">Flourless Chocolate Cake</div>
+    </div>
     
-        <div class="dropdown">
-        <button class="dropbtn" onclick="myFunction()">Recipes
-          
-        </button>
-        <div class="dropdown-content" id="myDropdown" >
-            <a href="#" onclick="showRecipe('GF Chocolate Cake')">GF Chocolate Cake</a>
-            <a href="#" onclick="showRecipe('Magic Bars')">Magic Bars</a>
-            <a href="#" onclick="showRecipe('Chocolate Chip Cookies')">Chocolate Chip Cookies</a>
-        </div>
-        </div> 
-      </div>
-
-
-
-
-      
-      <h3>All the healthy recipe alternatives you have been craving!</h3>
-      <p>Click on the drop down menu to explore glute, dairy, and sugar free recipes</p>
-      
-</body>
-
-
-
-<!--title above slide show-->
-<h2 style="text-align:center">Featured Recipes</h2>
-
-<!--slide show on landing page-->
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 3</div>
-    <img src="https://images.unsplash.com/photo-1540337706094-da10342c93d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 3</div>
-    <img src="https://images.unsplash.com/photo-1529763898477-40a4374b072f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 3</div>
-    <img src="https://images.unsplash.com/photo-1583743089695-4b816a340f82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" style="width:100%">
-  </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://images.unsplash.com/photo-1625876981820-be17a6807189?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" style="width:100%">
+      <div class="text">Chocolate chip Almond Flour Cookies</div>
+    </div>
     
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://images.unsplash.com/photo-1505252784141-72a7a8073787?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=902&q=80" style="width:100%">
+      <div class="text">Magic Bars</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
 
-<!--buttons at the bottom of pictures to click onto next picture--> 
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+
+
+
 
   
-
+  
