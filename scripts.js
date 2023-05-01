@@ -96,7 +96,7 @@ function Recipe(a, b, c, d) {
     } //end of .display() method
 
      //adds this recipe to the Nav Bar ul as a new li tag that is clickable
-     this.addToNav = function() {
+     this.myDrowndown = function() {
         
         //create a new element for the navbar
         let newNavLI = document.createElement("a");
