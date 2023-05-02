@@ -51,6 +51,7 @@
     text-decoration: none;
     display: block;
     text-align: left;
+
   }
   
   .dropdown-content a:hover {
@@ -162,14 +163,6 @@ img {vertical-align: middle;}
 
 
 
-/*CSS for specific lists*/
-
-.dropdown-content {
-    background-image: url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=824&q=80");
-    padding: 15 px;
-
-
-}
 
 
 
